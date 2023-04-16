@@ -1,0 +1,15 @@
+export { default as IconCss3 } from "./css3";
+export { default as IconHtml5 } from "./html5";
+export { default as IconCypress } from "./cypress";
+export { default as IconDocker } from "./docker";
+export { default as IconGit } from "./git";
+export { default as IconGitlab } from "./gitlab";
+export { default as IconJS } from "./javascript";
+export { default as IconJest } from "./jest";
+export { default as IconMui } from "./mui";
+export { default as IconNextJs } from "./nextjs";
+export { default as IconReact } from "./react";
+export { default as IconRedux } from "./redux";
+export { default as IconTailwind } from "./tailwind";
+export { default as IconTypescript } from "./typescript";
+export { default as IconWebpack } from "./webpack";
