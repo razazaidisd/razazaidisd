@@ -1,6 +1,7 @@
 import * as React from "react";
+import { IconProps } from "./types";
 
-function IconTailwind(props: React.SVGProps<SVGSVGElement>) {
+function IconTailwind(props: IconProps) {
   return (
     <svg
       viewBox="0 -51 256 256"

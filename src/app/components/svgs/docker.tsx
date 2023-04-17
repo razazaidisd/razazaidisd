@@ -1,6 +1,7 @@
 import * as React from "react";
+import { IconProps } from "./types";
 
-function IconDocker(props: React.SVGProps<SVGSVGElement>) {
+function IconDocker(props: IconProps) {
   return (
     <svg
       viewBox="0 0 16 16"

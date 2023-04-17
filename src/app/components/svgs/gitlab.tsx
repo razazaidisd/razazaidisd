@@ -1,6 +1,7 @@
 import * as React from "react";
+import { IconProps } from "./types";
 
-function IconGitlab(props: React.SVGProps<SVGSVGElement>) {
+function IconGitlab(props: IconProps) {
   return (
     <svg
       viewBox="0 0 16 16"

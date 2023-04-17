@@ -1,6 +1,7 @@
 import * as React from "react";
+import { IconProps } from "./types";
 
-function IconNextJs(props: React.SVGProps<SVGSVGElement>) {
+function IconNextJs(props: IconProps) {
   return (
     <svg
       viewBox="0 -101.5 512 512"
@@ -8,7 +9,6 @@ function IconNextJs(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
-      fill="#000000"
       width="80"
       {...props}
     >

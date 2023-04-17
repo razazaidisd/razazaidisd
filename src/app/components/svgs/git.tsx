@@ -1,6 +1,7 @@
 import * as React from "react";
+import { IconProps } from "./types";
 
-function IconGit(props: React.SVGProps<SVGSVGElement>) {
+function IconGit(props: IconProps) {
   return (
     <svg
       viewBox="0 0 32 32"

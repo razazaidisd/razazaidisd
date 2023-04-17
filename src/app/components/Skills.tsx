@@ -22,66 +22,66 @@ import {
 
 const Skills = () => {
   const TECHNOLOGIES = [
-    // {
-    //   name: "Html5",
-    //   Icon: IconHtml5,
-    // },
+    {
+      name: "Html5",
+      Icon: IconHtml5,
+    },
     {
       name: "Css3",
       Icon: IconCss3,
     },
-    // {
-    //   name: "Javascript",
-    //   Icon: IconJS,
-    // },
-    // {
-    //   name: "React",
-    //   Icon: IconReact,
-    // },
-    // {
-    //   name: "NextJs",
-    //   Icon: IconNextJs,
-    // },
-    // {
-    //   name: "Redux",
-    //   Icon: IconRedux,
-    // },
-    // {
-    //   name: "Typescript",
-    //   Icon: IconTypescript,
-    // },
-    // {
-    //   name: "Webpack",
-    //   Icon: IconWebpack,
-    // },
-    // {
-    //   name: "Tailwind",
-    //   Icon: IconTailwind,
-    // },
+    {
+      name: "Javascript",
+      Icon: IconJS,
+    },
+    {
+      name: "React",
+      Icon: IconReact,
+    },
+    {
+      name: "NextJs",
+      Icon: IconNextJs,
+    },
+    {
+      name: "Redux",
+      Icon: IconRedux,
+    },
+    {
+      name: "Typescript",
+      Icon: IconTypescript,
+    },
+    {
+      name: "Webpack",
+      Icon: IconWebpack,
+    },
+    {
+      name: "Tailwind",
+      Icon: IconTailwind,
+    },
     {
       name: "Cypress",
       Icon: IconCypress,
     },
-    // {
-    //   name: "Docker",
-    //   Icon: IconDocker,
-    // },
-    // {
-    //   name: "Git",
-    //   Icon: IconGit,
-    // },
-    // {
-    //   name: "Gitlab",
-    //   Icon: IconGitlab,
-    // },
-    // {
-    //   name: "Jest",
-    //   Icon: IconJest,
-    // },
-    // {
-    //   name: "Mui",
-    //   Icon: IconMui,
-    // },
+    {
+      name: "Docker",
+      Icon: IconDocker,
+    },
+    {
+      name: "Git",
+      Icon: IconGit,
+    },
+    {
+      name: "Gitlab",
+      Icon: IconGitlab,
+    },
+    {
+      name: "Jest",
+      Icon: IconJest,
+    },
+    {
+      name: "Mui",
+      Icon: IconMui,
+    },
   ];
 
   const container = {
@@ -104,33 +104,35 @@ const Skills = () => {
     },
   };
   return (
-    <div className="container m-auto px-6 py-16">
-      <h4 className="mb-8 text-3xl font-bold text-center md:text-lefts">
-        Tech
-      </h4>
-      <motion.div
-        className="grid grid-cols-7 gap-4"
-        variants={container}
-        initial="hidden"
-        animate="visible"
-      >
-        {TECHNOLOGIES.map(({ name, Icon }) => {
-          return (
-            <motion.div key={name} variants={item}>
-              <Icon
-                width="60"
-                initial={{ scale: 0, rotate: 180 }}
-                animate={{ rotate: 0, scale: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 20,
-                }}
-              />
-            </motion.div>
-          );
-        })}
-      </motion.div>
+    <div className="py-16 bg-white">
+      <div className="container m-auto px-6">
+        <h4 className="mb-8 text-3xl font-bold text-center md:text-lefts text-slate-950	">
+          Tech
+        </h4>
+        <motion.div
+          className="grid grid-cols-7 gap-4"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          {TECHNOLOGIES.map(({ name, Icon }) => {
+            return (
+              <motion.div key={name} variants={item}>
+                <Icon
+                  width="60"
+                  initial={{ scale: 0, rotate: 180 }}
+                  animate={{ rotate: 0, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                  }}
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </div>
     </div>
   );
 };
