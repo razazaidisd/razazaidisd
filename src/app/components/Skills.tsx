@@ -22,66 +22,66 @@ import {
 
 const Skills = () => {
   const TECHNOLOGIES = [
-    {
-      name: "Html5",
-      Icon: IconHtml5,
-    },
+    // {
+    //   name: "Html5",
+    //   Icon: IconHtml5,
+    // },
     {
       name: "Css3",
       Icon: IconCss3,
     },
-    {
-      name: "Javascript",
-      Icon: IconJS,
-    },
-    {
-      name: "React",
-      Icon: IconReact,
-    },
-    {
-      name: "NextJs",
-      Icon: IconNextJs,
-    },
-    {
-      name: "Redux",
-      Icon: IconRedux,
-    },
-    {
-      name: "Typescript",
-      Icon: IconTypescript,
-    },
-    {
-      name: "Webpack",
-      Icon: IconWebpack,
-    },
-    {
-      name: "Tailwind",
-      Icon: IconTailwind,
-    },
+    // {
+    //   name: "Javascript",
+    //   Icon: IconJS,
+    // },
+    // {
+    //   name: "React",
+    //   Icon: IconReact,
+    // },
+    // {
+    //   name: "NextJs",
+    //   Icon: IconNextJs,
+    // },
+    // {
+    //   name: "Redux",
+    //   Icon: IconRedux,
+    // },
+    // {
+    //   name: "Typescript",
+    //   Icon: IconTypescript,
+    // },
+    // {
+    //   name: "Webpack",
+    //   Icon: IconWebpack,
+    // },
+    // {
+    //   name: "Tailwind",
+    //   Icon: IconTailwind,
+    // },
     {
       name: "Cypress",
       Icon: IconCypress,
     },
-    {
-      name: "Docker",
-      Icon: IconDocker,
-    },
-    {
-      name: "Git",
-      Icon: IconGit,
-    },
-    {
-      name: "Gitlab",
-      Icon: IconGitlab,
-    },
-    {
-      name: "Jest",
-      Icon: IconJest,
-    },
-    {
-      name: "Mui",
-      Icon: IconMui,
-    },
+    // {
+    //   name: "Docker",
+    //   Icon: IconDocker,
+    // },
+    // {
+    //   name: "Git",
+    //   Icon: IconGit,
+    // },
+    // {
+    //   name: "Gitlab",
+    //   Icon: IconGitlab,
+    // },
+    // {
+    //   name: "Jest",
+    //   Icon: IconJest,
+    // },
+    // {
+    //   name: "Mui",
+    //   Icon: IconMui,
+    // },
   ];
 
   const container = {

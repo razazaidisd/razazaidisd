@@ -1,6 +1,7 @@
 import * as React from "react";
+import { IconProps } from "./types";
 
-function IconCypress(props: React.SVGProps<SVGSVGElement>) {
+function IconCypress(props: IconProps) {
   return (
     <svg
       fill="#000000"
