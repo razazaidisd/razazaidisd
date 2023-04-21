@@ -110,16 +110,20 @@ const Skills = () => {
           Tech
         </h4>
         <motion.div
-          className="grid grid-cols-7 gap-4"
+          className="grid grid-cols-5  md:grid-cols-10 lg:grid-cols-10 gap-4"
           variants={container}
           initial="hidden"
           animate="visible"
         >
           {TECHNOLOGIES.map(({ name, Icon }) => {
             return (
-              <motion.div key={name} variants={item}>
+              <motion.div
+                key={name}
+                variants={item}
+                style={{ justifyContent: "center", display: "flex" }}
+              >
                 <Icon
-                  width="60"
+                  width="70%"
                   initial={{ scale: 0, rotate: 180 }}
                   animate={{ rotate: 0, scale: 1 }}
                   transition={{
