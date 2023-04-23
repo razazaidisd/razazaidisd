@@ -60,7 +60,7 @@ const Contact = () => {
               className="mb-1 block text-base font-medium text-slate-50"
               htmlFor="name"
             >
-              First Name
+              Name
             </label>
             <input
               id="name"
