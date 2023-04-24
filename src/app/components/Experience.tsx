@@ -1,7 +1,7 @@
 import { EXPERIENCES } from "../utils/constants";
 const Experience = () => {
   return (
-    <section className="px-20 py-10">
+    <section className="container m-auto px-6 py-16">
       <h4 className="mb-8 text-3xl font-bold text-center md:text-left">
         Experience
       </h4>

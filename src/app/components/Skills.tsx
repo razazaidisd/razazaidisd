@@ -104,8 +104,8 @@ const Skills = () => {
     },
   };
   return (
-    <div className="py-16 bg-white">
-      <div className="container m-auto px-6">
+    <div className="bg-white">
+      <div className="container m-auto px-2 py-16">
         <h4 className="mb-8 text-3xl font-bold text-center md:text-lefts text-slate-950	">
           Tech
         </h4>

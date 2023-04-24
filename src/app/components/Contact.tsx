@@ -5,8 +5,6 @@ import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
-import { ERROR_EMAIL, ERROR_MESSAGE, ERROR_NAME } from "./constants";
-
 const Contact = () => {
   const contactForm = React.useRef<HTMLFormElement>(null);
   const [submitting, setSubmitting] = useState(false);
