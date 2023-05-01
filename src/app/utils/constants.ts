@@ -104,6 +104,7 @@ export const EXPERIENCES = [
       "Joined the Design System team to develop a scalable and easy-to-maintain Components Library.",
       "Dedicated to delivering consistent and unified solutions across all applications.",
     ],
+    keywords: [],
   },
   {
     id: "4",
@@ -124,6 +125,7 @@ export const EXPERIENCES = [
       "Provided strategic timelines and technical roadmaps for upcoming projects, ensuring timely delivery and alignment with business goals.",
       "Participated in the technical recruiting and interview process for multiple teams, ensuring high-quality talent acquisition.",
     ],
+    keywords: [],
   },
   {
     id: "3",
@@ -140,6 +142,7 @@ export const EXPERIENCES = [
       "Implemented the latest web technologies to provide the best user experience and practices, resulting in a 35% increase in user acquisition and retention.",
       "Participated in planning the scope of work.",
     ],
+    keywords: [],
   },
   {
     id: "2",
@@ -155,6 +158,7 @@ export const EXPERIENCES = [
       "Revamped the entire UI of multiple Banking internal applications using the latest technologies.",
       "Communicated effectively with the team to manage project concepts and deliver milestones and objectives.",
     ],
+    keywords: [],
   },
   {
     id: "1",
@@ -168,5 +172,6 @@ export const EXPERIENCES = [
       "Expert in pixel-perfect PSD to HTML conversion without using custom CSS.",
       "Developed a Windows 8 store application using C# and Xaml, achieving a 20% improvement in website and application performance.",
     ],
+    keywords: [],
   },
 ];

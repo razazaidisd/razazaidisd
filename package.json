@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "formik": "^2.2.9",
+    "react-calendly": "^4.1.1",
     "yup": "^1.1.1"
   }
 }

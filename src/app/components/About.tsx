@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { alegreya } from "../fonts";
 
 import "./About.scss";
 
@@ -8,7 +9,9 @@ const About = () => {
       <div className="container m-auto px-6 py-16">
         <div className="lg:flex justify-between items-center">
           <div className="lg:w-6/12 lg:p-0 p-7">
-            <h1 className="sm:text-5xl text-4xl text-slate-50 font-medium leading-tight mb-5 capitalize">
+            <h1
+              className={`sm:text-5xl text-4xl text-slate-50 font-medium leading-tight mb-5 capitalize ${alegreya.className}`}
+            >
               Raza Zaidi
             </h1>
             <p className="text-xl text-zinc-200 bg-[#0e2f4b]">
@@ -29,7 +32,7 @@ const About = () => {
                 className="text-slate-50 hover:text-white dark:hover:text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 16 16"
                 >
@@ -43,7 +46,7 @@ const About = () => {
                 className="text-slate-50 hover:text-white dark:hover:text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -62,7 +65,7 @@ const About = () => {
                 className="text-slate-50 hover:text-white dark:hover:text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -77,7 +80,7 @@ const About = () => {
                 className="text-slate-50 hover:text-white dark:hover:text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -96,7 +99,7 @@ const About = () => {
                 className="text-slate-50 hover:text-white dark:hover:text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -118,7 +121,7 @@ const About = () => {
                   fill="currentColor"
                   viewBox="-274.15 0 1200 1200"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g

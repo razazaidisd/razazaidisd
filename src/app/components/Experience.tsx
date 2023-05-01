@@ -1,8 +1,12 @@
 import { EXPERIENCES } from "../utils/constants";
+import { alegreya } from "../fonts";
+
 const Experience = () => {
   return (
     <section className="container m-auto px-6 py-16">
-      <h4 className="mb-8 text-3xl font-bold text-center md:text-left">
+      <h4
+        className={`mb-8 text-3xl md:text-4xl font-bold text-center md:text-left ${alegreya.className}`}
+      >
         Experience
       </h4>
       {EXPERIENCES.map((exp) => (
@@ -19,6 +23,22 @@ const Experience = () => {
             {exp.description.map((des) => (
               <li key={des}>{des}</li>
             ))}
+
+            {exp.keywords.length ? (
+              <div>
+                Keywords:{" "}
+                {exp.keywords.map((k) => (
+                  <span
+                    key={k}
+                    className="inline-block whitespace-nowrap rounded-full bg-primary-100 px-[0.65em] pb-[0.25em] pt-[0.35em] text-center align-baseline text-[0.75em] font-bold leading-none text-primary-700"
+                  >
+                    {k}
+                  </span>
+                ))}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       ))}

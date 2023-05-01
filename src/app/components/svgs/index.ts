@@ -13,3 +13,4 @@ export { default as IconRedux } from "./redux";
 export { default as IconTailwind } from "./tailwind";
 export { default as IconTypescript } from "./typescript";
 export { default as IconWebpack } from "./webpack";
+export { default as IconNotion } from "./notion";

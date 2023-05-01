@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { alegreya } from "../fonts";
 
 import {
   IconCss3,
@@ -18,6 +19,7 @@ import {
   IconTailwind,
   IconTypescript,
   IconWebpack,
+  IconNotion,
 } from "./svgs";
 
 const Skills = () => {
@@ -82,6 +84,10 @@ const Skills = () => {
       name: "Mui",
       Icon: IconMui,
     },
+    {
+      name: "Notion",
+      Icon: IconNotion,
+    },
   ];
 
   const container = {
@@ -106,9 +112,11 @@ const Skills = () => {
   return (
     <div className="bg-white">
       <div className="container m-auto px-2 py-16">
-        <h4 className="mb-8 text-3xl font-bold text-center md:text-lefts text-slate-950	">
+        <h2
+          className={`mb-8 text-3xl md:text-4xl font-bold text-center md:text-lefts text-slate-950	${alegreya.className}`}
+        >
           Tech
-        </h4>
+        </h2>
         <motion.div
           className="grid grid-cols-5  md:grid-cols-10 lg:grid-cols-10 gap-4"
           variants={container}
