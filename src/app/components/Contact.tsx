@@ -7,7 +7,11 @@ import { toast } from "react-toastify";
 import { InlineWidget } from "react-calendly";
 import { alegreya } from "../fonts";
 
-const Contact = () => {
+interface IContactForm {
+  displayContactForm?: boolean;
+}
+
+const Contact = ({ displayContactForm }: IContactForm) => {
   const contactForm = React.useRef<HTMLFormElement>(null);
   const [submitting, setSubmitting] = useState(false);
 
@@ -51,85 +55,91 @@ const Contact = () => {
   return (
     <div className="bg-white">
       <div className="container m-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 grid-cols-none gap-6">
-          <div>
-            <h2
-              className={`text-3xl text-slate-950 font-semibold md:text-4xl pb-5 ${alegreya.className}`}
-            >
-              Contact me
-            </h2>
-            <form ref={contactForm} onSubmit={formik.handleSubmit}>
-              <div className="mb-5">
-                <label
-                  className="mb-1 block text-base font-medium text-slate-950"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.name}
-                  className={`w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
-                    formik.touched.name && formik.errors.name
-                      ? "border border-red-500"
-                      : ""
-                  }`}
-                />
-              </div>
-
-              <div className="mb-5">
-                <label
-                  htmlFor="email"
-                  className="mb-1 block text-base font-medium text-slate-950"
-                >
-                  Email Address
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                  className={`w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
-                    formik.touched.email && formik.errors.email
-                      ? "border border-red-500"
-                      : ""
-                  }`}
-                />
-              </div>
-              <div className="mb-5">
-                <label
-                  htmlFor="lastName"
-                  className="mb-1 block text-base font-medium text-slate-950"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.message}
-                  className={`w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
-                    formik.touched.message && formik.errors.message
-                      ? "border border-red-500"
-                      : ""
-                  }`}
-                />
-              </div>
-              <button
-                type="submit"
-                className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
-                disabled={submitting}
+        <div
+          className={`grid ${
+            displayContactForm ? "md:grid-cols-2" : ""
+          } grid-cols-none gap-6`}
+        >
+          {displayContactForm && (
+            <div>
+              <h2
+                className={`text-3xl text-slate-950 font-semibold md:text-4xl pb-5 ${alegreya.className}`}
               >
-                Submit
-              </button>
-            </form>
-          </div>
+                Contact me
+              </h2>
+              <form ref={contactForm} onSubmit={formik.handleSubmit}>
+                <div className="mb-5">
+                  <label
+                    className="mb-1 block text-base font-medium text-slate-950"
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.name}
+                    className={`w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
+                      formik.touched.name && formik.errors.name
+                        ? "border border-red-500"
+                        : ""
+                    }`}
+                  />
+                </div>
+
+                <div className="mb-5">
+                  <label
+                    htmlFor="email"
+                    className="mb-1 block text-base font-medium text-slate-950"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                    className={`w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
+                      formik.touched.email && formik.errors.email
+                        ? "border border-red-500"
+                        : ""
+                    }`}
+                  />
+                </div>
+                <div className="mb-5">
+                  <label
+                    htmlFor="lastName"
+                    className="mb-1 block text-base font-medium text-slate-950"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.message}
+                    className={`w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md ${
+                      formik.touched.message && formik.errors.message
+                        ? "border border-red-500"
+                        : ""
+                    }`}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+                  disabled={submitting}
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          )}
           <div>
             <h2
               className={`text-3xl text-slate-950 font-semibold md:text-4xl pb-5 ${alegreya.className}`}
@@ -142,7 +152,7 @@ const Contact = () => {
               <br />
               Or book a 1-to-1 consultancy call
             </p>
-            <div className="shadow-lg border">
+            <div className={`${displayContactForm ? "shadow-lg border" : ""}`}>
               <InlineWidget url="https://calendly.com/razazaidisd/30min" />
             </div>
           </div>

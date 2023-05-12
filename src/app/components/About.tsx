@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { alegreya } from "../fonts";
 
-import "./About.scss";
-
 const About = () => {
   return (
     <div className="bg-about">

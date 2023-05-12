@@ -1,6 +1,6 @@
 import "react-toastify/dist/ReactToastify.css";
 import { firaCode } from "./fonts";
-import "./globals.css";
+import "./globals.scss";
 
 export const metadata = {
   title: "Raza Zaidi - Frontend Architect | Senior Javascript Developer",
