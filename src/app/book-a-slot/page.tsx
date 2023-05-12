@@ -14,9 +14,12 @@ export default function BookASlot() {
               <h1
                 className={`sm:text-5xl text-4xl text-slate-50 font-medium leading-tight mb-5 capitalize ${alegreya.className}`}
               >
-                Book a 1:1 session with Raza Zaidi
+                Unlock Your Full Potential: Book a 1:1 Session with Raza Zaidi
               </h1>
-              <p className="text-xl text-zinc-200 bg-[#0e2f4b]"></p>
+              <p className="text-xl text-zinc-200 bg-[#0e2f4b]">
+                Experience personalized coaching and mentoring from Raza Zaidi,
+                and take the first step towards achieving your goals.
+              </p>
 
               <div className="py-5 flex gap-x-4">
                 <a
