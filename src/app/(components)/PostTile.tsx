@@ -2,21 +2,20 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-export interface IPost {
+
+export type PostProps = {
   id: string;
   title: string;
-  shortDescription: string;
+  author: {
+    name: string;
+    email?: string;
+  } | null;
+  shortDescription?: string;
   content: string;
   published: boolean;
-  authorId: string;
-  author: IAuthor;
-}
+};
 
-export interface IAuthor {
-  name: string;
-}
-
-const PostTile: React.FC<{ post: IPost }> = ({ post }) => {
+const PostTile: React.FC<{ post: PostProps }> = ({ post }) => {
   const router = useRouter();
 
   const authorName = post.author ? post.author.name : "Unknown author";
@@ -40,7 +39,7 @@ const PostTile: React.FC<{ post: IPost }> = ({ post }) => {
           className="leading-relaxed mb-5"
           dangerouslySetInnerHTML={{ __html: post.shortDescription || "" }}
         />
-        <div className="flex items-center flex-wrap">
+        <div className="flex items-center flex-wrap ">
           <button
             onClick={() => router.push(`/blog/${post.id}`)}
             className="bg-gradient-to-r from-cyan-400 to-blue-400 hover:scale-105 drop-shadow-md  shadow-cla-blue px-4 py-1 rounded-lg"
