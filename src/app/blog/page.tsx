@@ -1,17 +1,17 @@
 import React from "react";
-import type { GetStaticProps } from "next";
-import PostTile, { PostProps } from "../(components)/PostTile";
+import PostTile from "../(components)/PostTile";
 import prisma from "../../../lib/prisma";
+import { IPost } from "../(components)/PostTile";
 
-const Blog = async (props: any) => {
-  const feed = await prisma.post.findMany({
+const Blog = async () => {
+  const feed = (await prisma.post.findMany({
     where: { published: true },
     include: {
       author: {
         select: { name: true },
       },
     },
-  });
+  })) as unknown as IPost[];
 
   console.log({ feed });
   return (
