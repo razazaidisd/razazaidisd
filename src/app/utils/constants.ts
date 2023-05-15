@@ -14,7 +14,7 @@ import {
   IconTailwind,
   IconTypescript,
   IconWebpack,
-} from "../components/svgs";
+} from "../(components)/svgs";
 
 export const TECHNOLOGIES = [
   {

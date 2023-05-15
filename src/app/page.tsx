@@ -1,11 +1,11 @@
 "use client";
 
 import { ToastContainer } from "react-toastify";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import About from "./(components)/About";
+import Skills from "./(components)/Skills";
+import Experience from "./(components)/Experience";
+import Contact from "./(components)/Contact";
+import Footer from "./(components)/Footer";
 
 export default function Home() {
   return (

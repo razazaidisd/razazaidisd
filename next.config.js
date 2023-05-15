@@ -11,6 +11,14 @@ const nextConfig = {
     TEMPLATE_ID: process.env.TEMPLATE_ID,
     PUBLIC_KEY: process.env.PUBLIC_KEY,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

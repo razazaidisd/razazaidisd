@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import Contact from "../components/Contact";
+import Contact from "../(components)/Contact";
 import { alegreya } from "../fonts";
 
 export default function BookASlot() {
