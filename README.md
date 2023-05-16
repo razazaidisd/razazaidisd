@@ -5,11 +5,11 @@
 
 - 👨‍💻 All of my experiences are available at [https://razazaidisd.com](https://www.razazaidisd.com)
 
-- 🚧 [WIP] You can read my articles on [razazaidisd.com/blog](https://www.razazaidisd.com/blog)
+- 🚧 [WIP] You can read my articles on [razazaidisd.com/blog](https://razazaidisd.com/blog)
 
 - 📫 How to reach me **razazaidisd@gmail.com**
 
-- 📄 Know about my experiences and skills in 1 doc [https://razazaidisd.com/Raza-Zaidi-Resume.pdf](https://www.razazaidisd.com/Raza-Zaidi-Resume.pdf)
+- 📄 Know about my experiences and skills in 1 doc [https://razazaidisd.com/Raza-Zaidi-Resume.pdf](https://razazaidisd.com/Raza-Zaidi-Resume.pdf)
 
 - 🌱 I’m currently learning **VueJS, React Native**
 
