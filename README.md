@@ -3,9 +3,9 @@
 
 - 💬 Ask me about **React, Typescript, Redux, Next JS, TailwindCSS, Sass, less, Gitlab CI/CD, Netlify,**
 
-- 👨‍💻 All of my experiences are available at [razazaidisd.com](razazaidisd.com)
+- 👨‍💻 All of my experiences are available at [https://razazaidisd.com](razazaidisd.com)
 
-- 📝 [COMING SOON] You can read my articles on [razazaidisd.com/blog](razazaidisd.com/blog)
+- 🚧 [WIP] You can read my articles on [https://razazaidisd.com/blog](razazaidisd.com/blog)
 
 - 📫 How to reach me **razazaidisd@gmail.com**
 
