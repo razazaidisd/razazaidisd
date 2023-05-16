@@ -3,7 +3,7 @@
 
 - 💬 Ask me about **React, Typescript, Redux, Next JS, TailwindCSS, Sass, less, Gitlab CI/CD, Netlify,**
 
-- 👨‍💻 All of my experiences are available at [https://razazaidisd.com](https://www.razazaidisd.com)
+- 👨‍💻 All of my experiences are available at [razazaidisd.com](https://www.razazaidisd.com)
 
 - 🚧 [WIP] You can read my articles on [razazaidisd.com/blog](https://razazaidisd.com/blog)
 
