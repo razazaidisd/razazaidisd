@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, This is Raza Zaidi</h1>
 <h3 align="center">Senior Frontend Engineer / JS enthusiast</h3>
 
-- 💬 Ask me about **React, Redux, Next JS, TailwindCSS, Sass, less, Gitlab CI/CD, Netlify,**
+- 💬 Ask me about **React, Typescript, Redux, Next JS, TailwindCSS, Sass, less, Gitlab CI/CD, Netlify,**
 
 - 👨‍💻 All of my experiences are available at [razazaidisd.com](razazaidisd.com)
 
