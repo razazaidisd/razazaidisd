@@ -112,7 +112,7 @@ const About = () => {
               <a
                 title="Resume"
                 className="text-slate-50"
-                href="https://razazaidisd.com/Raza-Zaidi-Resume.pdf"
+                href="https://razazaidisd.com/Raza-zaidi-Resume.pdf"
                 target="_blank"
               >
                 <svg

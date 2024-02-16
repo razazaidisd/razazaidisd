@@ -94,11 +94,25 @@ export const iconAnimation = {
 
 export const EXPERIENCES = [
   {
+    id: "6",
+    title: "Senior Software Engineer",
+    company: "Tacto Technology GmbH",
+    from: "July 2023",
+    to: "PRESENT",
+    location: "Munich, Germany",
+    description: [
+      "Lead the firefighter team who supports customer success and helps the mission team to focus on new feature development.",
+      "Developing scalable and reusable key components of Tacto web application in close collaboration with the product and backend teams.",
+      "Integrated Segment and June.so for precise user activity analytics in Tacto App, informing data-driven enhancements.",
+    ],
+    keywords: [],
+  },
+  {
     id: "5",
-    title: "Senior Frontend Engineer",
+    title: "Senior Developer",
     company: "SAP SE",
     from: "DEC 2022",
-    to: "PRESENT",
+    to: "May 2023",
     location: "Munich, Germany",
     description: [
       "Joined the Design System team to develop a scalable and easy-to-maintain Components Library.",
@@ -108,7 +122,7 @@ export const EXPERIENCES = [
   },
   {
     id: "4",
-    title: "Frontend Architect",
+    title: "Senior Software Engineer II - Frontend Architect",
     company: "Westwing Group AG",
     from: "FEB 2017",
     to: "NOV 2022",
